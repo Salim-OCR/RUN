@@ -1,0 +1,33 @@
+.form-container{
+    height: 70vh;
+    text-align: center;
+    @include boder-top-bottom;
+    & h2{
+        font-size: 3rem;
+        margin: 20px;
+    }
+}
+.labels{
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "n e"
+    "m m";
+    gap: 10px; 
+    margin-bottom: 30px;
+}
+#name{
+    grid-area: n;
+}
+#email{
+    grid-area: e;
+}
+#message{
+    grid-area: m;
+}
+textarea {
+    resize: none;
+}

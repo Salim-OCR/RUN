@@ -1,0 +1,13 @@
+@mixin center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin txt-auto {
+    width: 90%;
+    margin: 0 auto;
+}
+@mixin boder-top-bottom {
+    border-top: 1px solid $color-secondary;
+    border-bottom: 1px solid $color-secondary;
+}

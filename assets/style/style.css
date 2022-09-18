@@ -1,0 +1,167 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  text-transform: capitalize;
+  font-weight: 200;
+}
+
+button {
+  padding: 17px 40px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  border: 1px solid rgb(226, 226, 226);
+  background: rgb(250, 250, 250);
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.header-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.left-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  width: 90%;
+  margin: 0 auto;
+}
+.left h1 {
+  font-size: 5rem;
+  padding: 20px 0;
+}
+.left p {
+  padding: 30px 0;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.right-header {
+  background: url(../../../assets/img/banner.jpg) right/cover;
+}
+
+.magna-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  height: 50vh;
+}
+
+.left-img-magna {
+  background: url(../../../assets/img/img-left.jpg) center/cover;
+}
+
+.right-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.txt {
+  width: 90%;
+  margin: 0 auto;
+}
+.txt h2 {
+  font-size: 3rem;
+  padding: 20px 0;
+}
+.txt p {
+  padding: 30px 0;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+.tempus-container {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  height: 50vh;
+}
+
+.left-txt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.txt {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.right-img-tempus {
+  background: url(../../../assets/img/img-right.jpg) center/cover;
+}
+
+.form-container {
+  height: 70vh;
+  text-align: center;
+  border-top: 1px solid rgb(226, 226, 226);
+  border-bottom: 1px solid rgb(226, 226, 226);
+}
+.form-container h2 {
+  font-size: 3rem;
+  margin: 20px;
+}
+
+.labels {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "n e" "m m";
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+#name {
+  grid-area: n;
+}
+
+#email {
+  grid-area: e;
+}
+
+#message {
+  grid-area: m;
+}
+
+textarea {
+  resize: none;
+}
+
+.logos-container ul {
+  height: 20vh;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.logos-container ul li {
+  margin: 40px;
+  border: 1px solid rgb(226, 226, 226);
+  padding: 20px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+body {
+  background: rgb(250, 250, 250);
+  color: rgb(35, 35, 35);
+}/*# sourceMappingURL=style.css.map */

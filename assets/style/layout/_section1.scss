@@ -1,0 +1,25 @@
+.magna-container{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: $height-50vh;
+}
+.left-img-magna{
+    background: url(../../../assets/img/img-left.jpg) center/cover;
+}
+.right-txt{
+    @include center-box;
+    @include boder-top-bottom;
+}
+.txt{
+    @include txt-auto;
+    & h2{
+        font-size: 3rem;
+        padding: 20px 0;
+    }
+    & p{
+        padding: 30px 0;
+        line-height: 2rem;
+        font-size: 1.1rem;
+        font-weight: 100;
+    }
+}

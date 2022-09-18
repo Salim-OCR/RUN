@@ -1,0 +1,16 @@
+.logos-container {
+    & ul{
+        height: 20vh;
+        list-style: none;
+        @include center-box;
+        @include txt-auto;
+
+        & li{
+            margin: 40px;
+            border: 1px solid $color-secondary;
+            padding: 20px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+        }
+    }
+}

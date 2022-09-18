@@ -1,0 +1,14 @@
+.tempus-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    height: $height-50vh;
+}
+.left-txt{
+    @include center-box;
+}
+.txt{
+    @include txt-auto;
+}
+.right-img-tempus{
+    background: url(../../../assets/img/img-right.jpg) center/cover;
+}
