@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap"
+      rel="stylesheet"
+    />
     <title>Run</title>
   </head>
   <body>
@@ -15,9 +21,11 @@
             <h1>run</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto,
-              atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio sit itaque beatae mollitia pariatur nemo, nostrum eveniet tenetur eos sed magni ipsa.
+              atque. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Odio sit itaque beatae mollitia pariatur nemo, nostrum eveniet
+              tenetur eos sed magni ipsa.
             </p>
-            <button>get started</button>
+            <a class="btn">get started</a>
           </div>
         </div>
         <div class="right-header">
@@ -35,7 +43,7 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequuntur suscipit perspiciatis incidunt eaque nemo sit.
             </p>
-            <button>learn more</button>
+            <a class="btn">learn more</a>
           </div>
         </div>
       </div>
@@ -49,41 +57,55 @@
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Consequuntur suscipit perspiciatis incidunt eaque nemo sit.
             </p>
-            <button>learn more</button>
+            <a class="btn">learn more</a>
           </div>
         </div>
         <div class="right-img-tempus"></div>
       </div>
     </section>
-    <section class="form-container">
+    <section class="contact">
       <h2>get in touch</h2>
-      <div class="form">
-        <form action="#">
-          <div class="labels">
-            <label id="name">Name</label>
-            <input type="text">
-            <label id="email">Email</label>
-            <input type="email">
-            <div id="message">
-              <label>Message</label>
-              <textarea cols="130" rows="10"></textarea>
-            </div>
+
+      <form action="#">
+        <div class="form-grid">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" />
           </div>
-          <button type="submit" value="Submit">send message</button>
-        </form>
-      </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+          </div>
+          <div id="message">
+            <label for="message">Message</label>
+            <textarea></textarea>
+          </div>
+        </div>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
     </section>
     <footer>
-      <div class="logos-container">
-        <ul>
-            <li><i class="fa fa-twitter"></i></li>
-            <li><i class="fa fa-facebook"></i></li>
-            <li><i class="fa fa-instagram"></i></li>
-            <li><i class="fa fa-linkedin"></i></li>
-            <li><i class="fa fa-thin fa-envelope"></i></li>
-        </ul>
-      </div>
+      <ul>
+        <li>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-thin fa-envelope"></i></a>
+        </li>
+      </ul>
     </footer>
-    <script src="https://kit.fontawesome.com/5e70f60eb5.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/5e70f60eb5.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

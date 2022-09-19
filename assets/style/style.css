@@ -11,7 +11,13 @@ h1, h2 {
   font-weight: 200;
 }
 
-button {
+li, a, a:visited {
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.btn {
   padding: 17px 40px;
   text-transform: uppercase;
   border-radius: 25px;
@@ -19,6 +25,13 @@ button {
   background: rgb(250, 250, 250);
   letter-spacing: 2px;
   font-weight: 200;
+  transition: 0.2s;
+}
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: rgb(127, 191, 255);
+  border: 1px solid skyblue;
 }
 
 .header-container {
@@ -40,6 +53,7 @@ button {
 .left h1 {
   font-size: 5rem;
   padding: 20px 0;
+  font-weight: 100;
 }
 .left p {
   padding: 30px 0;
@@ -106,62 +120,93 @@ button {
   background: url(../../../assets/img/img-right.jpg) center/cover;
 }
 
-.form-container {
-  height: 70vh;
+.contact {
   text-align: center;
-  border-top: 1px solid rgb(226, 226, 226);
-  border-bottom: 1px solid rgb(226, 226, 226);
+  padding: 60px 0;
 }
-.form-container h2 {
+.contact h2 {
   font-size: 3rem;
   margin: 20px;
 }
 
-.labels {
-  width: 70%;
-  margin: 0 auto;
+.form-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: "n e" "m m";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100px 224px;
+  grid-template-areas: "name email" "msg msg";
   gap: 10px;
-  margin-bottom: 30px;
+  width: 85%;
+  margin: 30px auto;
+  max-width: 600px;
 }
-
-#name {
-  grid-area: n;
+.form-grid #message {
+  grid-area: msg;
 }
-
-#email {
-  grid-area: e;
+.form-grid label {
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
 }
-
-#message {
-  grid-area: m;
-}
-
-textarea {
+.form-grid textarea {
   resize: none;
+  height: 180px;
+}
+.form-grid input[type=text], .form-grid textarea {
+  width: 100%;
+  margin: 20px 0 40px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+.form-grid input[type=text]:focus, .form-grid textarea:focus {
+  border: 1px solid skyblue;
 }
 
-.logos-container ul {
-  height: 20vh;
-  list-style: none;
+footer {
+  padding: 70px 0px 90px;
+  position: relative;
+}
+footer::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background: rgb(198, 198, 198);
+  left: 50%;
+  top: 0;
+  transform: translate(-50%);
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 300px;
+  margin: 0px auto;
+}
+footer ul a {
+  display: inline-block;
+  border: 1px solid rgb(226, 226, 226);
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
-}
-.logos-container ul li {
-  margin: 40px;
-  border: 1px solid rgb(226, 226, 226);
   padding: 20px;
-  border-radius: 50%;
+  transition: 0.2s;
+}
+footer ul a:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: rgb(127, 191, 255);
+  border: 1px solid skyblue;
   font-size: 1.2rem;
 }
 
 body {
+  font-family: "Reem Kufi Ink", sans-serif;
   background: rgb(250, 250, 250);
   color: rgb(35, 35, 35);
 }/*# sourceMappingURL=style.css.map */

@@ -1,33 +1,45 @@
-.form-container{
-    height: 70vh;
+.contact{
     text-align: center;
-    @include boder-top-bottom;
+    padding: 60px 0;
     & h2{
         font-size: 3rem;
         margin: 20px;
     }
 }
-.labels{
-    width: 70%;
-    margin: 0 auto;
+.form-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 224px;
     grid-template-areas: 
-    "n e"
-    "m m";
+    "name email"
+    "msg msg";
     gap: 10px; 
-    margin-bottom: 30px;
-}
-#name{
-    grid-area: n;
-}
-#email{
-    grid-area: e;
-}
-#message{
-    grid-area: m;
-}
-textarea {
-    resize: none;
+    width: 85%;
+    margin: 30px auto;
+    max-width: 600px;
+    & #message{
+        grid-area: msg;
+    }
+    & label{
+        font-weight: 600;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+    & textarea {
+        resize: none;
+        height: 180px;
+    }
+    & input[type="text"], textarea{
+        width: 100%;
+        margin: 20px 0 40px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #ccc;
+        padding: 10px;
+        transition: .3s ease;
+
+        &:focus{
+            border: 1px solid skyblue;
+        }
+    }
 }

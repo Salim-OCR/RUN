@@ -1,16 +1,38 @@
-.logos-container {
-    & ul{
-        height: 20vh;
-        list-style: none;
-        @include center-box;
-        @include txt-auto;
+footer {
+  padding: 70px 0px 90px;
+  position: relative;
 
-        & li{
-            margin: 40px;
-            border: 1px solid $color-secondary;
-            padding: 20px;
-            border-radius: 50%;
-            font-size: 1.2rem;
-        }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: rgb(198, 198, 198);
+    left: 50%;
+    top: 0;
+    transform: translate(-50%);
+  }
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    width: 33%;
+    min-width: 300px;
+    margin: 0px auto;
+
+    & a {
+      display: inline-block;
+      border: 1px solid $color-secondary;
+      border-radius: 50px;
+      width: 50px;
+      height: 50px;
+      @include center-box;
+      padding: 20px;
+      transition: 0.2s;
+
+      &:hover {
+        @include hover;
+        font-size: 1.2rem;
+      }
     }
+  }
 }

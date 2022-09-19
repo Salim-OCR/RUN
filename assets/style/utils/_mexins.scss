@@ -11,3 +11,10 @@
     border-top: 1px solid $color-secondary;
     border-bottom: 1px solid $color-secondary;
 }
+
+@mixin hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    color: rgb(127, 191, 255);
+    border: 1px solid skyblue;
+}

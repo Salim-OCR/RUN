@@ -1,4 +1,4 @@
-button{
+.btn{
     padding: 17px 40px;
     text-transform: uppercase;
     border-radius: 25px;
@@ -6,4 +6,9 @@ button{
     background: $bg-primary;
     letter-spacing: 2px;
     font-weight: 200;
+    transition: .2s;
+
+    &:hover{
+        @include hover;
+    }
 }

@@ -9,3 +9,8 @@ h1, h2{
     text-transform: capitalize;
     font-weight: 200;
 }
+li, a, a:visited{
+    color: black;
+    list-style-type: none;
+    text-decoration: none;
+}
