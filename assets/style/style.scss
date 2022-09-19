@@ -13,3 +13,51 @@ body{
     background: $bg-primary;
     color: $color-primary;
 }
+
+// RESPONSIVE
+@media screen and (max-width: 800px){
+    header{
+        height: auto;
+
+        & .header-container{
+            display: flex;
+            flex-direction: column;
+        }
+
+        & .right-header{
+            height: 50vh;
+            margin-top: 30px;
+            object-fit: contain;
+        }
+    }
+    .container{
+        padding: 15px;
+        border: none;
+    }
+    section{
+        & .magna-container{
+            display: block;
+            height: auto;
+        }
+
+        & .tempus-container{
+            display: block;        
+            height: auto;
+        }
+    }
+    footer{
+        & ul{
+            min-width: 300px;
+        }
+
+        & a{
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+
+            & i{
+                font-size: .7rem;
+            }
+        }
+    }
+}
