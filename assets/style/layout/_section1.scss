@@ -4,7 +4,7 @@
     height: $height-50vh;
 }
 .left-img-magna{
-    background: url(../../../assets/img/img-left.jpg) center/cover;
+    background: url("../img/img-left.jpg") center/cover;
 }
 .right-txt{
     @include center-box;

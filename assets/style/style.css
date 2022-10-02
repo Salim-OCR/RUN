@@ -63,7 +63,7 @@ li, a, a:visited {
 }
 
 .right-header {
-  background: url(../../../assets/img/banner.jpg) right/cover;
+  background: url("../img/banner.jpg") right/cover;
 }
 
 .magna-container {
@@ -73,7 +73,7 @@ li, a, a:visited {
 }
 
 .left-img-magna {
-  background: url(../../../assets/img/img-left.jpg) center/cover;
+  background: url("../img/img-left.jpg") center/cover;
 }
 
 .right-txt {
@@ -117,7 +117,7 @@ li, a, a:visited {
 }
 
 .right-img-tempus {
-  background: url(../../../assets/img/img-right.jpg) center/cover;
+  background: url("../img/img-right.jpg") center/cover;
 }
 
 .contact {
